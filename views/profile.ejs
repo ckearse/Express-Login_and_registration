@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Profile</title>
+  </head>
+  <body>
+    <style>
+      .logout{
+        position: absolute;
+        right: 0px;
+        margin-right: 15px;
+      }
+    </style>
+        
+      <% if(session.user_id){ %>
+        <a class="logout" href="/logout">Logout</a>
+      <% } %>
+
+    <h1>Welcome, <%= session.name %>!</h1>
+
+    <h2>Login was successful!</h2>
+  </body>
+</html>
